@@ -1,12 +1,12 @@
 package com.runa.springmvc.entities.developer;
 
 import lombok.RequiredArgsConstructor;
-
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
+import java.util.List;
 
 @Service
 @Transactional
@@ -23,7 +23,13 @@ public class DeveloperService implements IDeveloperService {
 
     @Override
     public DeveloperDto getDeveloperById(Long id) {
-       Developer dev=developerRepository.getOne(id);
-       return DeveloperDto.entityToDto(dev);
+        Developer dev = developerRepository.getOne(id);
+        return DeveloperDto.entityToDto(dev);
+    }
+
+    @Override
+    public List<DeveloperDto> developerNameStartsWith(String firstLetter) {
+        List<Developer> devs = developerRepository.findAll(DeveloperSpecification.developerNameStartsWith(firstLetter));
+        return DeveloperDto.convertList(devs);
     }
 }
