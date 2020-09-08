@@ -1,0 +1,17 @@
+D:\coursesIT\practice\springmvcpractice\src\main\java\com\runa\springmvc\entities\developer\IDeveloperService.java
+D:\coursesIT\practice\springmvcpractice\src\main\java\com\runa\springmvc\entities\user\IUserRepository.java
+D:\coursesIT\practice\springmvcpractice\src\main\java\com\runa\springmvc\entities\user\User.java
+D:\coursesIT\practice\springmvcpractice\src\main\java\com\runa\springmvc\configuration\WebConfig.java
+D:\coursesIT\practice\springmvcpractice\src\main\java\com\runa\springmvc\configuration\DatabaseConfig.java
+D:\coursesIT\practice\springmvcpractice\src\main\java\com\runa\springmvc\entities\user\UserRepository.java
+D:\coursesIT\practice\springmvcpractice\src\main\java\com\runa\springmvc\configuration\WebServletConfiguration.java
+D:\coursesIT\practice\springmvcpractice\src\main\java\com\runa\springmvc\entities\developer\Developer.java
+D:\coursesIT\practice\springmvcpractice\src\main\java\com\runa\springmvc\entities\user\IUserService.java
+D:\coursesIT\practice\springmvcpractice\src\main\java\com\runa\springmvc\entities\developer\DeveloperService.java
+D:\coursesIT\practice\springmvcpractice\src\main\java\com\runa\springmvc\entities\developer\DeveloperController.java
+D:\coursesIT\practice\springmvcpractice\src\main\java\com\runa\springmvc\entities\developer\DeveloperDto.java
+D:\coursesIT\practice\springmvcpractice\src\main\java\com\runa\springmvc\entities\HomeController.java
+D:\coursesIT\practice\springmvcpractice\src\main\java\com\runa\springmvc\entities\developer\DeveloperRepository.java
+D:\coursesIT\practice\springmvcpractice\src\main\java\com\runa\springmvc\entities\user\UserController.java
+D:\coursesIT\practice\springmvcpractice\src\main\java\com\runa\springmvc\entities\user\UserService.java
+D:\coursesIT\practice\springmvcpractice\src\main\java\com\runa\springmvc\entities\user\UserDto.java
