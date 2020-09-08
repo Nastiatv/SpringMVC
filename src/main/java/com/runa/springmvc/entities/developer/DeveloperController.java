@@ -35,13 +35,17 @@ public class DeveloperController {
     
     @GetMapping(value = "bylastName")
     public String getDeveloperByLastName(Model model, @RequestBody String lastName) {
+        model.addAttribute("message", "dev by LastName");
+        model.addAttribute("devs", developerService.getDeveloperByLastName(lastName));
       //TODO display
-        return null;
+        return "fn";
      }
     
     @GetMapping(value = "bylet")
     public String getDeveloperByLet(Model model,  @RequestBody String let) {
+        model.addAttribute("message", "dev by let");
+        model.addAttribute("devs", developerService.developerNameStartsWith(let));
       //TODO display
-        return null;
+        return "devs";
      }
    }
