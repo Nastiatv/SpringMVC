@@ -18,5 +18,5 @@ public interface DeveloperRepository extends JpaRepository<Developer, Long>, Jpa
 
     public Page<Developer> findAll(Pageable pageReq);
 
-    public List<NameView> getDeveloperByLastName(String lastName);
+    public List<FullNameView> getDeveloperByLastName(String lastName);
 }    

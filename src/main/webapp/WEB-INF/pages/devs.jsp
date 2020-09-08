@@ -9,6 +9,7 @@
 <c:forEach var="dev" items="${listDevs}">  ${dev.id}  </c:forEach>
 <c:forEach var="dev" items="${listDevs}">  ${dev.lastName}  </c:forEach>
 <c:forEach var="dev" items="${listDevs}">  ${dev.firstName}  </c:forEach>
+
 </tr>
             </table>
 </body>

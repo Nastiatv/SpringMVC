@@ -30,6 +30,14 @@ public class DeveloperService implements IDeveloperService {
     @Override
     public List<DeveloperDto> developerNameStartsWith(String firstLetter) {
         List<Developer> devs = developerRepository.findAll(DeveloperSpecification.developerNameStartsWith(firstLetter));
+        String name=devs.get(0).getFirstName();
         return DeveloperDto.convertList(devs);
     }
+    
+    @Override
+    public List<FullNameView> getDeveloperByLastName(String lastName) {
+        List<FullNameView> fl=developerRepository.getDeveloperByLastName(lastName);
+        String fullname=fl.get(0).getFullName();
+        return fl;
+      }
 }

@@ -13,4 +13,6 @@ public interface IDeveloperService {
 
     List<DeveloperDto> developerNameStartsWith(String firstLetter);
 
+    List<FullNameView> getDeveloperByLastName(String lastName);
+
 }

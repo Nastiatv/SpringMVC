@@ -9,7 +9,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+
 
 @Controller
 @RequestMapping(value = "/developers/")
@@ -24,13 +26,22 @@ public class DeveloperController {
         //TODO display
     }
 
-    @GetMapping(value = "/{id}")
+    @GetMapping(value = "{id}")
     public String getDeveloperById(Model model, @PathVariable("id") Long id) {
         model.addAttribute("message", "dev by id");
         model.addAttribute("dev", developerService.getDeveloperById(id));
         return "dev";
-        
-    }
-
-
-}
+     }
+    
+    @GetMapping(value = "bylastName")
+    public String getDeveloperByLastName(Model model, @RequestBody String lastName) {
+      //TODO display
+        return null;
+     }
+    
+    @GetMapping(value = "bylet")
+    public String getDeveloperByLet(Model model,  @RequestBody String let) {
+      //TODO display
+        return null;
+     }
+   }
